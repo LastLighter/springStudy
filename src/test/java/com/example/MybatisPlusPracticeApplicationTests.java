@@ -31,6 +31,7 @@ class MybatisPlusPracticeApplicationTests {
         BookQuery bookQuery=new BookQuery();
         bookQuery.setId(3L);
         bookQuery.setId2(6L);
+        System.out.println("nice");
 
         LambdaQueryWrapper<Book> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.lt(Book::getId,bookQuery.getId());
